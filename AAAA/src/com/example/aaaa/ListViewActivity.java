@@ -11,7 +11,7 @@ import android.view.View;
 import android.widget.ListView;
 import android.widget.Toast;
 
-public class ListViewActivity extends ListActivity {
+public class ListViewActivity extends ListActivity/* implements onViewClick */ {
 	private MyAdapter adapter;
 	private List<Bean> list;
 
@@ -58,4 +58,9 @@ public class ListViewActivity extends ListActivity {
 
 		Toast.makeText(this, position + "", Toast.LENGTH_LONG).show();
 	}
+
+	// @Override
+	// public void onclick(View convertView, int index) {
+	//
+	// }
 }
